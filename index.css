@@ -1,0 +1,118 @@
+.header {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: .5rem;
+    gap: 1rem;
+}
+
+.link {
+    background: none;
+    border:none;
+    text-decoration: none;
+    color:#777;
+    font-family:inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.link-padding{
+    flex:2;
+}
+
+.header-right {
+    order:4;
+}
+
+.body-container{
+    display:flex;
+    background-color: lightblue;
+    height: calc(100vh - 2.5rem);
+    width: calc(100vw);
+}
+
+.sidebar{
+    /* display:none; */
+    flex-direction: column;
+    align-items: flex-start;
+    height:calc(100vh - 2.5rem);
+    background-color: lightgray;
+    width:0;
+    transform: translateX(-10px);
+    opacity:0;
+    transition: opacity 200ms ease-in-out, transform 200ms ease-in-out, width 200ms ease-in-out;
+}
+
+.sidebar.active{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height:calc(100vh - 2.5rem);
+    width: 25vw;
+    background-color: lightgray;
+    padding: 1rem;
+    gap:1rem;
+    transform: translateX(0px);
+    opacity:1;
+    transition: opacity 200ms ease-in-out, transform 200ms ease-in-out, width 200ms ease-in-out;
+}
+
+.sidebar-item{
+    display:inherit;
+    background: none;
+    border:none;
+    text-decoration: none;
+    color:#777;
+    font-family:inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.sidebar-button{
+    border-color:darkgray;
+    border-style:none solid none none;
+    color:black;
+    background-color: lightgray;
+}
+
+.content{
+    padding:1rem;
+    width:100vw;
+}
+
+.content-info{
+    display: none;
+}
+
+.content-info.active{
+    display: block;
+}
+
+
+
+/* About section */
+.about{
+    background-color: lightblue;
+    height:100vh;
+    width:100vw;
+}
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title{
+    display:flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-self: center;
+}
+
+.about-content{
+    display:flex;
+    width:inherit;
+}

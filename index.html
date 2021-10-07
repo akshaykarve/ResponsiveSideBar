@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+    <title>Responsive Side Bar</title>
+</head>
+<body>
+
+    <div class="header">
+        <button class="link">Home</button>
+        <a href="about.html"><button class="link">About</button></a>
+        <div class="link-padding"></div>
+        <button class="link header-right">Login</button>
+    </div>
+    <div class="body-container">
+        <div class="sidebar active" data-sidebar>
+            <button class="sidebar-item" data-sidebar-button adele>Adele</button>
+            <button class="sidebar-item" data-sidebar-button kanna>Kanna</button>
+        </div>
+        <button class="sidebar-button" onclick="toggleSideBar()" sidebar-button> < </button>
+        <div class="content" sidebar-content>
+            <div id="adele" class="content-info active" content-info>
+                <h4>Adele Badge Info</h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, similique dolore? Accusantium doloremque tenetur nisi, esse quibusdam repellendus accusamus magni ratione, quas, pariatur aliquam obcaecati unde. Quisquam nostrum temporibus dolore!
+                </p>
+            </div>
+            <div id="kanna" class="content-info" content-info>
+                <h4>Kanna Badge Info</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis porro magni voluptate, deleniti sed quas expedita earum sequi, eveniet voluptatibus accusamus esse ipsam natus corrupti est! Aperiam facere blanditiis enim!
+                </p>
+            </div>
+        </div>
+    </div>    
+
+    
+</body>
+</html>
